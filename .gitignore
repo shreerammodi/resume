@@ -1,0 +1,7 @@
+*
+
+!.gitignore
+!*.tex
+!*.cls
+!/.github/
+!.github/**/**
