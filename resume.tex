@@ -62,11 +62,14 @@
 
 \item \textbf{Lead 30 person team} across policy research, marketing,
     sales, operations; \textbf{owning} product delivery of core
-    services, hiring, pricing strategy, and operations.
+    services, hiring, pricing strategy, and operations. Designed
+    \textbf{two-sided marketplace} for student-coach matching which
+    added \textbf{new revenue lines}.
 
-\item Designed \textbf{two-sided marketplace} matching students to coaches
-    for preround coaching and drills, expanding coach drill offerings
-    and revenue.
+\item Built full-stack \textbf{enrollment, billing, \& onboarding
+    platform} (Next.js, TypeScript) on Stripe invoicing and payment
+    webhooks, Airtable CRM, and DocuSeal e-contracts, including ACH
+    verification handling.
 \end{compactitem}
 
 \begin{tblr}{
@@ -148,19 +151,19 @@
     width=\textwidth,
     colspec = {Xr},
   }
-  \href{https://ebb.smodi.net}{{\bfseries \ul{ebb}}} (\href{https://github.com/shreerammodi/ebb}{\ul{code}})| TypeScript, React, Next.js, Tailwind CSS, Rust, Tauri, iroh
+  \href{https://ebb.smodi.net}{{\bfseries \ul{ebb}}} | TypeScript, React, Next.js, Tailwind CSS, Rust, Tauri, iroh
 \end{tblr}
 \vspace{-0.5em}
 \begin{compactitem}
-\item Built keyboard-first spreadsheet editor for flowing debate rounds;
+\item Shipping keyboard-first spreadsheet editor for flowing debate rounds;
     ran \textbf{3 design iterations} with a \textbf{15-user beta cohort},
     prioritizing features from user interviews and observed usage.
 
 \item Built \textbf{serverless P2P co-editing} in Rust: custom CRDT (hybrid
     logical clocks, fractional indexing) over iroh QUIC
 
-\item Adopted by \textbf{top debate programs} (Berkeley, Northwestern,
-    Michigan, Emory) and \textbf{top-5 teams}
+\item \textbf{Thousands} of users, adopted by \textbf{top-5
+    teams} and debate programs (Berkeley, Northwestern, Michigan, Dartmouth)
 \end{compactitem}
 
 \vspace{0.5em}
@@ -169,17 +172,15 @@
     width=\textwidth,
     colspec = {Xr},
   }
-  \href{https://drive.google.com/file/d/162I3tcnlKPBb6XT4FQy-la9Y_mbG5RRA/view?usp=sharing}{{\bfseries \ul{DTW for Semantic Trajectory Analysis in IR}}} | Python, Llama 2, BEIR, UMAP
+  \href{https://github.com/ant981228/cardmirror}{{\bfseries \ul{CardMirror}}} (\#2 contributor) | TypeScript, ProseMirror, Electron
 \end{tblr}
 \vspace{-0.5em}
 \begin{compactitem}
-\item Co-authored study testing whether DTW-aligned token trajectories
-    across Llama 2-7B layers beat single-layer embeddings in
-    ColBERT-style retrieval; evaluated 6 token-weighting strategies on BEIR.
+\item Designed \textbf{v1 plugin API}: typed editor surface,
+    local HTTP bridge with session auth; \textbf{13 merged PRs}.
 
-\item Designed position-aware weighting to offset causal attention;
-    best configuration reached \textbf{0.715 nDCG@10}, a
-    \textbf{5.7\% gain over BM25}
+\item Refactored LLM layer into \textbf{provider-neutral dispatch},
+    adding OpenRouter for open-weight and free models.
 \end{compactitem}
 
 \vspace{0.5em}
@@ -192,14 +193,24 @@
 \end{tblr}
 \vspace{-0.5em}
 \begin{compactitem}
-\item Implemented L2-penalized Bradley-Terry model in Python to model
-    skill ratings for debaters based on tournament results.
+\item Built Bradley-Terry skill ratings (Fisher scoring, L2 prior,
+    side-advantage term) for \textbf{1,300+ debaters} from
+    \textbf{5,000+ round results}, weighting major tournaments.
+\end{compactitem}
 
-\item Designed data processing pipeline to
-    parse tournament data,
-    handle multi-team debaters,
-    and engineered tournament weighting algorithm
-    to account for match significance
+\vspace{0.5em}
+
+{\bfseries Other Open Source}
+
+\begin{compactitem}
+\item \href{https://github.com/NixOS/nixpkgs/}{\textbf{\ul{nixpkgs}}}
+    (\textbf{26k}$\star$, Nix): packaged and maintained programs,
+    merged to main.
+
+\item
+    \href{https://github.com/nvim-orgmode/}{\textbf{\ul{nvim-orgmode}}}
+    (\textbf{3.9k}$\star$, Lua): Prevented calendar buffer corruption
+    using post-render locking via Neovim API.
 \end{compactitem}
 
 \vspace{0.5em}
@@ -251,9 +262,9 @@
     Marathi
 
 \item[\bfseries Interests:]
-    Vim,
-    Open-source software,
-    UNIX \& Linux system configuration,
+    Vim \& Neovim,
+    custom keyboard firmware (QMK/ZMK),
+    Nix,
     competitive debate
 \end{compactitem}
 
